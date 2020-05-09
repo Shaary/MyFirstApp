@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstApp.Core", "..\MyFir
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstApp.Data", "..\MyFirstApp.Data\MyFirstApp.Data.csproj", "{E8185374-58B0-4418-9D82-E925F095C842}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{9A13FB99-473E-4F4C-9C72-CB5F045C4780}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE7DB79D-1422-40BE-8E37-93B100419893} = {9A13FB99-473E-4F4C-9C72-CB5F045C4780}
+		{E8185374-58B0-4418-9D82-E925F095C842} = {9A13FB99-473E-4F4C-9C72-CB5F045C4780}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC47AFD9-BDF3-4D20-8B16-E67245088AD6}
