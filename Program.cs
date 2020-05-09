@@ -1,10 +1,6 @@
-﻿using Microsoft.Data.SqlClient;
-using MyFirstApp.Core;
+﻿using MyFirstApp.Core;
 using MyFirstApp.Data;
 using System;
-using System.Data;
-using Dapper;
-using System.Linq;
 
 namespace MyFirstApp
 {
@@ -22,19 +18,21 @@ namespace MyFirstApp
 
             var repository = new Repository(connectionString, "fs", "usp_AccessTypesGet");
 
-
-
             var parameters = repository.ParametersNamesGet();
+            repository.TableAndColumnNamesGet(parameters);
 
             //foreach (string param in parameters)
             //{
             //    Console.WriteLine(param);
             //}
 
-            repository.ParametersDataGet(parameters);
+            var data = repository.ParametersDataGet(parameters);
 
+            var storedProcQuery = new StoredProcQuery();
 
+            var query = storedProcQuery.QueryGet("fs", "usp_AccessTypesGet", data);
 
+            Console.WriteLine(query);
 
             //Test methods
             //IDbConnection db = new SqlConnection(connectionString);
