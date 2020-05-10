@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstApp", "MyFirstApp.csproj", "{7DD0D46D-D33D-4D5D-AED2-BD2ACFA1AAE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstApp", "MyFirstApp.csproj", "{7DD0D46D-D33D-4D5D-AED2-BD2ACFA1AAE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstApp.Core", "..\MyFirstApp.Core\MyFirstApp.Core.csproj", "{BE7DB79D-1422-40BE-8E37-93B100419893}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstApp.Core", "..\MyFirstApp.Core\MyFirstApp.Core.csproj", "{BE7DB79D-1422-40BE-8E37-93B100419893}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstApp.Data", "..\MyFirstApp.Data\MyFirstApp.Data.csproj", "{E8185374-58B0-4418-9D82-E925F095C842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstApp.Data", "..\MyFirstApp.Data\MyFirstApp.Data.csproj", "{E8185374-58B0-4418-9D82-E925F095C842}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{9A13FB99-473E-4F4C-9C72-CB5F045C4780}"
 EndProject

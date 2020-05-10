@@ -16,19 +16,25 @@ namespace MyFirstApp
             //Console.WriteLine("Enter stored procedure name: ");
             //var procName = Console.ReadLine();
 
-            var repository = new Repository(connectionString, "fs", "usp_AccessTypesGet");
+            var repository = new Repository(connectionString, "usp_AccessTypesGet");
 
-            var parameters = repository.ParametersNamesGet();
-            repository.TableAndColumnNamesGet(parameters);
+            var storedProcQuery = new StoredProcQuery();
+
+            var dataTable = repository.ParametersTableGet();
+
+            storedProcQuery.ParamaterNamesGet(dataTable);
+
+            var dict = storedProcQuery.TableAndColumnNamesGet("fs");
+
 
             //foreach (string param in parameters)
             //{
             //    Console.WriteLine(param);
             //}
 
-            var data = repository.ParametersDataGet(parameters);
+            var data = repository.ParametersDataGet(dict);
 
-            var storedProcQuery = new StoredProcQuery();
+           
 
             var query = storedProcQuery.QueryGet("fs", "usp_AccessTypesGet", data);
 
